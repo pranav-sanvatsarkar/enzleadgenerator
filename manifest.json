@@ -20,8 +20,6 @@
 	},
 	// background script permissions
 	"permissions" : [ 
-		"<all_urls>",
-		"http://*/",
-        "https://*/"
+		"<all_urls>"
 	]
 }
