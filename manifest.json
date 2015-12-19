@@ -9,6 +9,14 @@
 	"description" : "This extension copies the LinkedIn page's Contact information and copies it to your Salesforce instance using OAuth protocol",
 	//"icons" : ["img/icon.png"],
 
+	// added content_scripts to execute in page content view
+	"content_scripts" : [
+		{
+			"matches" : ["https://*/*"],
+			"js" : ["js/content.js"]
+		}
+	],
+
 	// added background script
 	"background" : {
 		"scripts" : ["js/background.js"]
